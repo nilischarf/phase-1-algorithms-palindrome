@@ -1,9 +1,17 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  if (word === word.split('').reverse().join('')) {
+    return true
+  } else {
+    return false
+  }
 }
 
 /* 
   Add your pseudocode here
+  function isPalindrome(word)
+    if the string is a palindrome, return true
+    otherwise, return false
 */
 
 /*
@@ -20,6 +28,7 @@ if (require.main === module) {
 
   console.log("Expecting: false");
   console.log("=>", isPalindrome("robot"));
+  
 }
 
 module.exports = isPalindrome;
